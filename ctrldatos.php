@@ -10,9 +10,7 @@ if(isset($_POST["registrar"]))
 	$nombre= $_POST['nombre'];
 	$usuario->Registrar();
 
-	if($usuario)
-
-
+	if($usuario->0)
 
 	{
 		echo "<META HTTP-EQUIV='refresh' content='0; url=index.php'>";

@@ -7,18 +7,10 @@ class Usuario
 		
 	function Registrar()
 	{
-		//$sql= "INSERT INTO DatosUsuarios ('nombre') VALUES ('$nombre')";
-		//if(mysqli_query($sql, $conn));
-
-
-		if (!mysqli_query($con,"INSERT INTO Persons (FirstName) VALUES ('Glenn')"))
-  		{
-  		echo("Error description: " . mysqli_error($con));
- 			}
-
-mysqli_close($conn);
-		
-		
+		$sql= "INSERT INTO DatosUsuarios ('nombre') VALUES ('$nombre')";
+		if(mysqli_query($sql, $conn));
+			
+			return $sql;
 
 	}
 }
