@@ -7,7 +7,7 @@ class Usuario
 		
 	function Registrar()
 	{
-		$sql= "INSERT INTO DatosUsuarios ('nombre') VALUES ('$nombre')";
+		$sql= "INSERT INTO datosusuarios ('nombre') VALUES ('$nombre')";
 		if(mysqli_query($sql, $conn));
 			
 			return $sql;

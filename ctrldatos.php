@@ -1,18 +1,13 @@
 <?php
-echo "5";
 require_once('conexion.php');
-echo "4";
 require_once('modeloregistrar.php');
 $conexion = new Conexion();
 $usuario = new Usuario();
 $conexion->Conectar();
 
-
-echo "1";
 if(isset($_POST["registrar"]))
 {
 	$nombre= $_POST['nombre'];
-	echo "2";
 	$usuario->Registrar();
 
 	if($usuario)
